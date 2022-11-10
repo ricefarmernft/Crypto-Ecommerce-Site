@@ -10,7 +10,6 @@ Built using:
 
 - React
 - Javascript
-- Firebase API
 - Stripe JS
 - HTML
 - CSS
@@ -45,3 +44,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Custom hooks
 - Restoring from localStorage
 - React Router
+- Firebase API
+- Cloudinary
