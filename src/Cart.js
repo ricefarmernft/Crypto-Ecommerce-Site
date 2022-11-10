@@ -30,8 +30,8 @@ export default function Cart(props) {
         .redirectToCheckout({
           lineItems: lineItems,
           mode: "payment",
-          successUrl: "http://localhost:3000/cart",
-          cancelUrl: "http://localhost:3000/cart",
+          successUrl: "https://crypto-ecommerce-site.vercel.app/cart",
+          cancelUrl: "https://crypto-ecommerce-site.vercel.app/cart",
           customerEmail: email,
         })
         .then((response) => {

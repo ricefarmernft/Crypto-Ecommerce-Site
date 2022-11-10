@@ -22,7 +22,7 @@ export default function ProductDetails(props) {
         setProduct(data);
       })
       .catch((error) => console.log("Could not load product details", error));
-         // eslint-disable-next-line react-hooks/exhaustive-deps
+       // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -46,13 +46,13 @@ export default function ProductDetails(props) {
               </NavLink>
             </li>
             <li>
-              {/* <NavLink
+              <NavLink
                 exact
                 activeClassName="tab-active"
-                to={match.url + "/nutrition"}
+                to={match.url + "/biography"}
               >
-                Nutrition
-              </NavLink> */}
+                Biography
+              </NavLink>
             </li>
           </ul>
         </div>
