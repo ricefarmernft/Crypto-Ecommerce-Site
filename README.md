@@ -1,6 +1,10 @@
-# Storefront (Rice Farms)
+# E-Commerce Storefront (Rice Labs)
 
-This is an interactive website featuring a mock storefront. Features the ability to add products to cart and checkout using Stripe API. Completed as the final project to the react-tutorial.app React tutorial.
+<img width="1361" alt="Screen Shot 2022-11-10 at 10 03 14 AM" src="https://user-images.githubusercontent.com/112427358/201145120-e4709835-a5e8-411f-870f-2211e5cd404b.png">
+
+This is an interactive website featuring a mock crypto E-commerce storefront. Features the ability to add products to cart and checkout using Stripe API. Completed as the final project to the react-tutorial.app React tutorial.
+
+Check out the project here: https://crypto-ecommerce-site.vercel.app/cart
 
 Built using:
 
