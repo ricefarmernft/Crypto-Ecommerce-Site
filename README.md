@@ -4,7 +4,7 @@
 
 This is an interactive website featuring a mock crypto E-commerce storefront. Features the ability to add products to cart and checkout using Stripe API. Completed as the final project to the react-tutorial.app React tutorial.
 
-Check out the project here: https://crypto-ecommerce-site.vercel.app/cart
+Check out the project here: https://crypto-ecommerce-site.vercel.app/
 
 Built using:
 
