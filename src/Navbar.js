@@ -28,52 +28,73 @@ export default function Navbar(props) {
   });
 
   return (
-    <nav className="navbar">
-      <NavLink to="/" className="nav-brand">
-        Rice Labs
-      </NavLink>
-      <ul>
-        <li className="nav-item">
-          <NavLink exact activeClassName="active" to="/">
-            Home
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink exact activeClassName="active" to="/about">
-            About us
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink activeClassName="active" to="/products">
-            Products
-          </NavLink>
-        </li>
-      </ul>
-      <div className="cart-div"></div>
-      <div className="icon-div">
-        <NavLink to="/cart" className="nav-item nav-cart btn btn-accent">
-          Cart ({cartCount})
+    <>
+      <nav className="navbar">
+        <NavLink to="/" className="nav-brand">
+          Rice Labs
         </NavLink>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href="https://twitter.com/ricefarmernft"
-        >
-          <Icon src={isDarkTheme ? twitterWhite : twitterBlack} />
-        </a>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href="https://github.com/ricefarmernft"
-        >
-          <Icon src={isDarkTheme ? githubWhite : githubBlack} />
-        </a>
-        {isDarkTheme ? (
-          <Icon src={sun} onIconClick={handleButtonClick} />
-        ) : (
-          <Icon src={moon} onIconClick={handleButtonClick} />
-        )}
+        <ul>
+          <li className="nav-item">
+            <NavLink exact activeClassName="active" to="/">
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink exact activeClassName="active" to="/about">
+              About us
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink activeClassName="active" to="/products">
+              Products
+            </NavLink>
+          </li>
+        </ul>
+        <div className="cart-div"></div>
+        <div className="icon-div">
+          <NavLink to="/cart" className="nav-item nav-cart btn btn-accent">
+            Cart ({cartCount})
+          </NavLink>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://twitter.com/ricefarmernft"
+          >
+            <Icon src={isDarkTheme ? twitterWhite : twitterBlack} />
+          </a>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/ricefarmernft"
+          >
+            <Icon src={isDarkTheme ? githubWhite : githubBlack} />
+          </a>
+          {isDarkTheme ? (
+            <Icon src={sun} onIconClick={handleButtonClick} />
+          ) : (
+            <Icon src={moon} onIconClick={handleButtonClick} />
+          )}
+        </div>
+      </nav>
+      <div className="mobile-nav-menu">
+        <ul>
+          <li className="nav-item">
+            <NavLink exact activeClassName="active" to="/">
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink exact activeClassName="active" to="/about">
+              About us
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink activeClassName="active" to="/products">
+              Products
+            </NavLink>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </>
   );
 }
